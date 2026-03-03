@@ -85,3 +85,7 @@
 2026-03-03 17:19:03 [info]: Processing text consultation for user user_3AOiAiZXPMeFnxKB1D8N1NiBTnD in Hindi
 2026-03-03 17:19:07 [info]: Translating response back to Hindi for user user_3AOiAiZXPMeFnxKB1D8N1NiBTnD
 2026-03-03 17:19:09 [info]: Generating TTS audio response in Hindi
+2026-03-03 18:42:12 [info]: [server]: Server is running at http://localhost:5000
+2026-03-03 18:42:13 [info]: MongoDB connected successfully
+2026-03-03 23:39:57 [info]: [server]: Server is running at http://localhost:5000
+2026-03-03 23:39:57 [info]: MongoDB connected successfully

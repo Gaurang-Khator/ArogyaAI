@@ -9,7 +9,7 @@ A full-stack web application that allows users to input their symptoms via text 
 - **Backend**: Node.js, Express, TypeScript, MongoDB (Mongoose), Winston, Helmet.
 - **AI Integration**: Sarvam AI (Speech-to-Text & Translation), Google Gen AI (Gemini 2.5 Flash).
 
-## Setup Instructions
+<!-- ## Setup Instructions
 
 ### 1. External Services Setup
 1. **Clerk**: Create a Clerk application for authentication. Get your `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY`.
@@ -90,4 +90,4 @@ A full-stack web application that allows users to input their symptoms via text 
 1. Create a cluster on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 2. Allow incoming IPs by configuring the Network Access.
 3. Create a Database User.
-4. Replace `MONGODB_URI` in the backend service variables with the Atlas connection string.
+4. Replace `MONGODB_URI` in the backend service variables with the Atlas connection string. -->

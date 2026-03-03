@@ -17,8 +17,19 @@ export const requireAuth = async (req: AuthRequest, res: Response, next: NextFun
         }
 
         const token = authHeader.split(' ')[1];
+        if (!token) {
+            return res.status(401).json({ success: false, message: 'Unauthorized: Malformed token' });
+        }
+
+        const clerkSecretKey = process.env.CLERK_SECRET_KEY;
+        if (!clerkSecretKey) {
+            logger.error('Authentication Error: CLERK_SECRET_KEY is not defined');
+            return res.status(500).json({ success: false, message: 'Internal Server Error' });
+        }
+
         const decodedToken = await verifyToken(token, {
-            secretKey: process.env.CLERK_SECRET_KEY,
+            secretKey: clerkSecretKey,
+            issuer: null,
         });
 
         if (!decodedToken || !decodedToken.sub) {
