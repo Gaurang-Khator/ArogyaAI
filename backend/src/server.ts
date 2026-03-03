@@ -16,8 +16,21 @@ const port = process.env.PORT || 5000;
 
 // Security and utility middleware
 app.use(helmet());
-app.use(cors({ origin: process.env.FRONTEND_URL || '*' }));
+
 app.use(express.json());
+
+//CORS Handling
+app.use(cors({
+    origin: [
+        "http://localhost:3000",
+        "https://arogya-ai-web.vercel.app"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+    credentials: true
+    })
+);
+
+app.options("*", cors()); //handle preflight requests
 
 // Rate Limiting
 const limiter = rateLimit({
