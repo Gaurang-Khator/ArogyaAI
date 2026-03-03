@@ -1,0 +1,12 @@
+2026-03-02 22:59:58 [error]: Sarvam STT Error: Request failed with status code 400
+2026-03-02 22:59:58 [error]: Failed to convert speech to text
+2026-03-02 23:00:14 [error]: Sarvam STT Error: Request failed with status code 400
+2026-03-02 23:00:14 [error]: Failed to convert speech to text
+2026-03-02 23:01:12 [error]: Sarvam Translate Error: Request failed with status code 400
+2026-03-02 23:01:12 [error]: Failed to translate text
+2026-03-02 23:07:30 [error]: Sarvam Translate Error: Request failed with status code 400
+2026-03-02 23:07:30 [error]: Failed to translate text
+2026-03-02 23:50:04 [error]: Sarvam TTS SDK Error:
+2026-03-02 23:50:04 [error]: Failed to generate TTS audio response for user user_3AOiAiZXPMeFnxKB1D8N1NiBTnD: Failed to generate speech
+2026-03-03 17:01:51 [error]: Sarvam STT SDK Error:
+2026-03-03 17:01:51 [error]: Failed to convert speech to text
