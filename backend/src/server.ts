@@ -54,5 +54,6 @@ app.use(errorHandler);
 
 // Start server
 app.listen(port, () => {
-    logger.info(`[server]: Server is running at http://localhost:${port}`);
+
+    logger.info(`[server]: ${process.env.NODE_ENV === "production" ? "Production server running" : `Local server running at http://localhost:${port}`}`);
 });
