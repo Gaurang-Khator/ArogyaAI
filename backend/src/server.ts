@@ -11,6 +11,8 @@ import rateLimit from 'express-rate-limit';
 import { logger } from './utils/logger';
 import { errorHandler } from './middleware/errorHandler';
 import consultationRoutes from './routes/consultation.routes';
+
+
 const app: Express = express();
 const port = process.env.PORT || 5000;
 
